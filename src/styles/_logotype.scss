@@ -1,0 +1,28 @@
+.fixed-logotype {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 100;
+    display: block;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: $primary-color;
+    transition: color $transition-fast;
+    &:hover {
+        color: $primary-color;
+    }
+    &--white {
+        color: $white-color;
+        &:hover {
+            color: $white-color;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        left: 8px;
+        bottom: 30px;
+    }
+}

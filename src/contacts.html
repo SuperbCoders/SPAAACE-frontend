@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+@@include('components/_head.html', {
+    "lang": "ru",
+    "title": "spaaaace - contacts",
+})
+<body>
+    @@include('components/_header.html', {
+        "contacts": "header__item--active",
+        "page": "/contacts/"
+    })
+    @@include('components/_mobile-menu.html')
+    @@include('components/_logotype.html')
+    <!-- main -->
+    <section class="main" id="main">
+        <div class="container">
+            <div class="row row-offset-10 d-none-desktop">
+                <div class="col-3 col-offset-3">
+                    <span class="txt-16 uppercase">UTC/GMT +3</span>
+                    <span class="txt-16 uppercase mt-10">Our time 12:15:03</span>
+                </div>
+            </div>
+            <div class="row row-offset-mobile-160">
+                <div class="col-2 col-mobile-3">
+                    <span class="txt-22">Please direct all inquiries to</span>
+                </div>
+            </div>
+            <div class="row row-offset-20">
+                <div class="col-4 col-mobile-6">
+                    <a href="mailto:hi@spaaace.io" class="txt-88 txt-44-mobile uppercase link">hi@spaaace.io</a>
+                </div>
+                <div class="col-1 col-offset-1 d-none-mobile">
+                    <span class="txt-16 uppercase">UTC/GMT +3</span>
+                    <span class="txt-16 uppercase mt-10">Our time 12:15:03</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of main -->
+    @@include('components/_scripts.html')
+</body>
+</html>

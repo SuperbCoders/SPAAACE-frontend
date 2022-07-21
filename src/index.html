@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+@@include('components/_head.html', {
+    "lang": "ru",
+    "title": "spaaaace",
+})
+<body>
+    @@include('components/_header.html', {
+        "page": "/"
+    })
+    @@include('components/_mobile-menu.html')
+    @@include('components/_logotype.html')
+    <!-- main -->
+    <section class="main" id="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-mobile-5">
+                    <h2 class="txt-44 break-all">Спееейс – мультидисципли-нарная дизайн-студия. Мы создаем объекты для физического и диджитального миров. Работаем с большими брендами и маленькими стартапами. Приходите. </h2>
+                </div>
+            </div>
+            <div class="row row-offset-160">
+                <div class="col-1 col-offset-4">
+                    <picture>
+                        <img src="img/img-book-pink.png" srcset="img/img-book-pink@2x.png 2x" alt="Image">
+                    </picture>
+                </div>
+                <div class="col-1">
+                    <span class="txt-16">(1)</span>
+                </div>
+            </div>
+            <div class="row-offset-10">
+                <div class="col-1 col-offset-4">
+                    <span class="txt-16 uppercase">RF Constitution</span>
+                </div>
+            </div>
+            <div class="row row-offset-40">
+                <div class="col-1 col-offset-2">
+                    <picture>
+                        <img src="img/img-book.png" srcset="img/img-book@2x.png 2x" alt="Image">
+                    </picture>
+                </div>
+                <div class="col-1">
+                    <span class="txt-16">(2)</span>
+                </div>
+            </div>
+            <div class="row-offset-10">
+                <div class="col-1 col-offset-2">
+                    <span class="txt-16 uppercase">Diamonds catalog</span>
+                </div>
+            </div>
+            <div class="row row-offset-160">
+                <div class="col-1 col-offset-2">
+                    <span class="txt-16 ml-auto">(3)</span>
+                </div>
+                <div class="col-3">
+                    <picture>
+                        <img src="img/book.jpg" srcset="img/book@2x.jpg 2x" alt="Image">
+                    </picture>
+                </div>
+            </div>
+            <div class="row-offset-10">
+                <div class="col-1 col-offset-3">
+                    <span class="txt-16 uppercase">Projects name</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of main -->
+    <!-- background video -->
+    <video class="background-video background-video--desktop" width="100%" height="100%" loop muted autoplay playsinline> <!-- desktop -->
+        <source src="/video/spaaace-video.webm" type="video/webm">
+        <source src="/video/spaaace-video.mov" type="video/mp4">
+    </video>
+    <video class="background-video background-video--mobile" width="100%" height="100%" loop muted autoplay playsinline> <!-- mobile -->
+        <source src="/video/spaaace-video-mobile.webm" type="video/webm">
+        <source src="/video/spaaace-video-mobile.mov" type="video/mp4">
+    </video>
+    <!-- end of background video -->
+    @@include('components/_scripts.html')
+</body>
+</html>

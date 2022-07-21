@@ -1,0 +1,18 @@
+// fonts load section
+@mixin font($fname, $fstyle, $fweight, $furl1, $furl2, $furl3) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		font-display: swap;
+        src: local($fname), url($furl1) format('woff2'), url($furl2) format('woff'), url($furl3) format('embedded-opentype');
+    }
+}
+
+@include font('FactorA', normal, 300, '../fonts/FactorA/FactorALight-Regular.woff2', '../fonts/FactorA/FactorALight-Regular.woff', '../fonts/FactorA/FactorALight-Regular.eot');
+@include font('FactorA', normal, 400, '../fonts/FactorA/FactorA-Regular.woff2', '../fonts/FactorA/FactorA-Regular.woff', '../fonts/FactorA/FactorA-Regular.eot');
+@include font('FactorA', normal, 500, '../fonts/FactorA/FactorAMedium-Regular.woff2', '../fonts/FactorA/FactorAMedium-Regular.woff', '../fonts/FactorA/FactorAMedium-Regular.eot');
+@include font('FactorA', normal, 700, '../fonts/FactorA/FactorA-Bold.woff2', '../fonts/FactorA/FactorA-Bold.woff', '../fonts/FactorA/FactorA-Bold.eot');
+
+// import section
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'; // bootstrap reboot collection
