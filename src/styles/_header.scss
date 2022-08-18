@@ -73,6 +73,7 @@
     @media screen and (hover: hover) {
       &[href] {
         &:hover {
+          color: var(--headerText);
           border-bottom: 1px solid var(--headerText);
         }
       }
