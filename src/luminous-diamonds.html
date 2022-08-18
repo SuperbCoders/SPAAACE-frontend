@@ -5,227 +5,230 @@
 })
 
 <body>
-  @@include('components/_header.html', {
-  "page": "/about/"
-  })
-  @@include('components/_mobile-menu.html')
-  @@include('components/_logotype.html')
-  <!-- image -->
-  <div class="image" style="min-height: 510px;">
-    <picture class="image__picture">
-      <img src="img/id-image.png" srcset="img/id-image@2x.png 2x" alt="Image">
-    </picture>
-    <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
-      <div class="row">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">{Книга о бренде}</span>
+  <div class="wrapper" data-scroller>
+    @@include('components/_header.html', {
+    "page": "/Luminous Diamonds/"
+    })
+    @@include('components/_mobile-menu.html')
+    @@include('components/_logotype.html')
+    <!-- image -->
+    <div class="image image--black" style="min-height: 510px;" data-section="black">
+      <picture class="image__picture">
+        <img src="img/id-image.png" srcset="img/id-image@2x.png 2x" alt="Image">
+      </picture>
+      <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
+        <div class="row">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">{Книга о бренде}</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">(Luminous Diamonds)</span>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">(Luminous Diamonds)</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">[Книга]</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end of image -->
-  <!-- main -->
-  <section class="main" id="main">
-    <div class="container">
-      <div class="row row-offset-160 row-offset-mobile-80">
-        <div class="col-1 col-mobile-3">
-          <span class="txt-22 txt-16-mobile uppercase">задача</span>
-        </div>
-        <div class="col-4 d-none-mobile">
-          <span class="txt-22">Новый ювелирный бренд рассказывает о себе в формате красивой книги. Такие книги обычно
-            лежат на кофейном столике и всех радуют.</span>
-        </div>
-      </div>
-      <div class="row row-offset-20 d-none-desktop">
-        <div class="col-5">
-          <span class="txt-22">Новый ювелирный бренд рассказывает о себе в формате красивой книги. Такие книги обычно
-            лежат на кофейном столике и всех радуют.</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(1)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-01.jpg" srcset="img/id-book-01@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(1)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(2)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-02.jpg" srcset="img/id-book-02@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(2)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(3)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-03.jpg" srcset="img/id-book-03@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(3)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(4)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-04.jpg" srcset="img/id-book-04@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(4)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(5)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-05.jpg" srcset="img/id-book-05@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(5)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(6)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-06.jpg" srcset="img/id-book-06@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(6)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(7)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-07.jpg" srcset="img/id-book-07@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(7)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-2">
-          <span class="txt-22">(8)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-10">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/id-book-08.jpg" srcset="img/id-book-08@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(8)</span>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">[Книга]</span>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end of main -->
-  <!-- team -->
-  <div class="team" id="team">
-    <span class="team__title">Команда</span>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Вадим Сусевич</span>
-          <span class="team__position">UI/UX</span>
+    <!-- end of image -->
+    <!-- main -->
+    <section class="main" id="main" data-section="white">
+      <div class="container">
+        <div class="row row-offset-160 row-offset-mobile-80">
+          <div class="col-1 col-mobile-3">
+            <span class="txt-22 txt-16-mobile uppercase">задача</span>
+          </div>
+          <div class="col-4 d-none-mobile">
+            <span class="txt-22">Новый ювелирный бренд рассказывает о себе в формате красивой книги. Такие книги обычно
+              лежат на кофейном столике и всех радуют.</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Денис Рыбкин</span>
-          <span class="team__position">Разработчик</span>
+        <div class="row row-offset-20 d-none-desktop">
+          <div class="col-5">
+            <span class="txt-22">Новый ювелирный бренд рассказывает о себе в формате красивой книги. Такие книги обычно
+              лежат на кофейном столике и всех радуют.</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Konstantin Osintsev</span>
-          <span class="team__position">Art director</span>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(1)</span>
+          </div>
         </div>
-      </li>
-    </ul>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">SPAAACE</span>
-          <span class="team__position">Клиент</span>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-01.jpg" srcset="img/id-book-01@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(1)</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">2020</span>
-          <span class="team__position">год</span>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(2)</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Программное обеспечение</span>
-          <span class="team__position">Индустрия</span>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-02.jpg" srcset="img/id-book-02@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(2)</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Приложение</span>
-          <span class="team__position">Направление</span>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(3)</span>
+          </div>
         </div>
-      </li>
-    </ul>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-03.jpg" srcset="img/id-book-03@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(3)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(4)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-04.jpg" srcset="img/id-book-04@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(4)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(5)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-05.jpg" srcset="img/id-book-05@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(5)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(6)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-06.jpg" srcset="img/id-book-06@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(6)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(7)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-07.jpg" srcset="img/id-book-07@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(7)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-2">
+            <span class="txt-22">(8)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-10">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/id-book-08.jpg" srcset="img/id-book-08@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(8)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of main -->
+    <!-- team -->
+    <div class="team" id="team">
+      <span class="team__title">Команда</span>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Вадим Сусевич</span>
+            <span class="team__position">UI/UX</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Денис Рыбкин</span>
+            <span class="team__position">Разработчик</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Konstantin Osintsev</span>
+            <span class="team__position">Art director</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">SPAAACE</span>
+            <span class="team__position">Клиент</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">2020</span>
+            <span class="team__position">год</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Программное обеспечение</span>
+            <span class="team__position">Индустрия</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Приложение</span>
+            <span class="team__position">Направление</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- end of team -->
   </div>
-  <!-- end of team -->
+
   <!-- scripts -->
   @@include('components/_scripts.html')
 </body>
