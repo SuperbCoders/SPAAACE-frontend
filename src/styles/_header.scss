@@ -1,110 +1,94 @@
 .header {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    left: 20px;
-    z-index: 100;
-    width: calc(100% - 40px);
-    &--white {
-        .header {
-            &__item {
-                &--active {
-                    .header__elem {
-                        border-bottom: 1px solid $white-color;
-                    }
-                }
-            }
-            &__elem {
-                color: $white-color;
+  --headerText: #000;
 
-                @media screen and (hover: hover) {
-                    &[href] {
-                        &:hover {
-                            border-bottom: 1px solid $white-color;
-                        }
-                    }
-                }
-            }
-            &__page {
-                color: $white-color;
-            }
-        }
-    }
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  left: 20px;
+  z-index: 100;
+  width: calc(100% - 40px);
 
-    @media screen and (min-width: 1920px) {
-        right: 40px;
-        left: 40px;
-        width: calc(100% - 80px);
-    }
-    @media screen and (max-width: 767px) {
-        top: 10px;
-        right: 8px;
-        left: 8px;
-        width: calc(100% - 16px);
-    }
+  &[data-theme="white"] {
+    --headerText: #000;
+  }
+  &[data-theme="black"] {
+    --headerText: #fff;
+  }
 
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    &__list {
-        display: flex;
-        align-items: center;
+  @media screen and (min-width: 1920px) {
+    right: 40px;
+    left: 40px;
+    width: calc(100% - 80px);
+  }
+  @media screen and (max-width: 767px) {
+    top: 10px;
+    right: 8px;
+    left: 8px;
+    width: calc(100% - 16px);
+  }
 
-        @media screen and (min-width: 1024px) {
-            &--mobile {
-                display: none;
-            }
-        }
-        @media screen and (max-width: 1023px) {
-            &--desktop {
-                display: none;
-            }
-        }
-    }
-    &__item {
-        &--active {
-            .header__elem {
-                border-bottom: 1px solid $primary-color;
-            }
-        }
-    }
-    &__item + &__item {
-        margin-left: 10px;
-    }
-    &__elem {
-        display: block;
-        width: fit-content;
-        font-size: 14px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: $primary-color;
-        border-bottom: 1px solid transparent;
-        transition: border $transition-default, color $transition-fast;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
 
-        @media screen and (max-width: 1023px) {
-            font-size: 16px;
-        }
-        @media screen and (hover: hover) {
-            &[href] {
-                &:hover {
-                    border-bottom: 1px solid $primary-color;
-                }
-            }
-        }
+    @media screen and (min-width: 1024px) {
+      &--mobile {
+        display: none;
+      }
     }
-    &__page {
-        display: block;
-        width: fit-content;
-        font-size: 14px;
-        font-weight: 500;
-        text-transform: uppercase;
-        color: $primary-color;
-        transition: color $transition-fast;
-        
-        @media screen and (max-width: 1023px) {
-            font-size: 16px;
-        }
+    @media screen and (max-width: 1023px) {
+      &--desktop {
+        display: none;
+      }
     }
+  }
+  &__item {
+    &--active {
+      .header__elem {
+        border-bottom: 1px solid var(--headerText);
+      }
+    }
+  }
+  &__item + &__item {
+    margin-left: 10px;
+  }
+  &__elem {
+    display: block;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--headerText);
+    border-bottom: 1px solid transparent;
+    transition: border $transition-default, color $transition-fast;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 16px;
+    }
+    @media screen and (hover: hover) {
+      &[href] {
+        &:hover {
+          border-bottom: 1px solid var(--headerText);
+        }
+      }
+    }
+  }
+  &__page {
+    display: block;
+    width: fit-content;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--headerText);
+    transition: color $transition-fast;
+
+    @media screen and (max-width: 1023px) {
+      font-size: 16px;
+    }
+  }
 }
