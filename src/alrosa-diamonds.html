@@ -5,268 +5,272 @@
 })
 
 <body>
-  @@include('components/_header.html', {
-  "current": "header--white",
-  "works": "header__item--active",
-  "page": "/works/"
-  })
-  @@include('components/_mobile-menu.html')
-  @@include('components/_logotype.html')
-  <!-- image -->
-  <div class="image">
-    <picture class="image__picture">
-      <img src="img/work-01.jpg" srcset="img/work-01@2x.jpg 2x" alt="Image">
-    </picture>
-    <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
-      <div class="row">
-        <div class="col-5">
-          <span class="txt-88 txt-44-mobile uppercase">{diamonds catalog}</span>
+  <div class="wrapper" data-scroller>
+    @@include('components/_header.html', {
+    "works": "header__item--active",
+    "page": "/alrosa/"
+    })
+    @@include('components/_mobile-menu.html')
+    @@include('components/_logotype.html')
+    <!-- image -->
+    <div class="image image--black" data-section="black">
+      <picture class="image__picture">
+        <img src="img/work-01.jpg" srcset="img/work-01@2x.jpg 2x" alt="Image">
+      </picture>
+      <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
+        <div class="row">
+          <div class="col-5">
+            <span class="txt-88 txt-44-mobile uppercase">{diamonds catalog}</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-4">
-          <span class="txt-88 txt-44-mobile uppercase">(Alrosa)</span>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-4">
+            <span class="txt-88 txt-44-mobile uppercase">(Alrosa)</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-4">
-          <span class="txt-88 txt-44-mobile uppercase">[Book]</span>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-4">
+            <span class="txt-88 txt-44-mobile uppercase">[Book]</span>
+          </div>
         </div>
       </div>
     </div>
+    <!-- end of image -->
+    <!-- main -->
+    <section class="main" id="main" data-section="white">
+      <div class="container">
+        <div class="row row-offset-80">
+          <div class="col-1 col-mobile-6">
+            <span class="txt-22 txt-16-mobile uppercase">задача</span>
+          </div>
+          <div class="col-3 d-none-mobile">
+            <span class="txt-44">Сделать дизайн каталога алмазов и бриллиантов Алроса, </span>
+          </div>
+        </div>
+        <div class="row d-none-mobile">
+          <div class="col-4">
+            <span class="txt-44">который расскажет про их историю, классификацию и ценность.</span>
+          </div>
+        </div>
+        <div class="row row-offset-10 d-none-desktop">
+          <div class="col-6">
+            <span class="txt-44">Сделать дизайн каталога алмазов и бриллиантов Алроса, который расскажет про их историю,
+              классификацию и ценность.</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-160">
+          <div class="col-1">
+            <span class="txt-22">1.</span>
+          </div>
+          <div class="col-3 col-mobile-4">
+            <span class="txt-22">Алроса — крупнейшая в мире алмазодобывающая компания. На долю которой приходится более
+              четверти мировой добычи алмазов.</span>
+          </div>
+        </div>
+        <div class="row row-offset-40">
+          <div class="col-1">
+            <span class="txt-22">2.</span>
+          </div>
+          <div class="col-3 col-mobile-4">
+            <span class="txt-22">Производители ювелирных украшений покупают неограненные камни боксами. Им нужен
+              печатный
+              каталог, в котором будет отражено все многообразие алмазов. И будут доступны подробные
+              характеристики.</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-160">
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22 uppercase">Решение</span>
+          </div>
+          <div class="col-4 col-mobile-5 col-offset-mobile-1">
+            <span class="txt-88 lh-1 txt-44-mobile">Мы сделали не просто каталог, <br>а роскошную книгу, которую приятно
+              листать и трогать.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- image -->
+    <div class="image mt-80" style="min-height: 955px;" data-section="black">
+      <picture class="image__picture">
+        <img src="img/work-02.jpg" srcset="img/work-02@2x.jpg 2x" alt="Image">
+      </picture>
+      <div class="image__wrapper bottom mobile-top" style="--bottom: 122px; --mobile-top: 40px;">
+        <div class="row">
+          <div class="col-2 col-offset-3 col-mobile-5 col-offset-mobile-0">
+            <span class="txt-22">Для удобства клиентов мы поделили объемное издание каталога на два тома. Для каждого из
+              них мы изготовили прозрачный пластиковый кейс с фирменным узором и названием, которое согласуется обложкой
+              книги и гармонично дополняет ее. </span>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(а)</span>
+          </div>
+        </div>
+        <div class="row row-offset-40 d-none-desktop">
+          <div class="col-6">
+            <span class="txt-22">(а)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of image -->
+    <!-- main -->
+    <section class="main" id="main" data-section="white">
+      <div class="container">
+        <div class="row row-offset-80">
+          <div class="col-1 col-mobile-4">
+            <span class="txt-22">Для переплета книги мы выбрали цветной картон фирменного оттенка Алроса <br>и оформили
+              его с помощью тиснения серебряной фольгой. </span>
+          </div>
+          <div class="col-2 d-none-mobile">
+            <picture>
+              <img src="img/book-01.png" srcset="img/book-01@2x.png 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(б)</span>
+          </div>
+        </div>
+        <div class="row row-offset-20 d-none-desktop">
+          <div class="col-5">
+            <picture>
+              <img src="img/book-01.png" srcset="img/book-01@2x.png 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1">
+            <span class="txt-22">(б)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80">
+          <div class="col-1 col-offset-1 col-mobile-5">
+            <span class="txt-22">Срез самой книги мы тоже сделали серебристым, чтобы при перелисты-вании страниц он
+              напоминал переливающиеся сверкание бриллиантов. </span>
+          </div>
+          <div class="col-3 d-none-mobile">
+            <picture>
+              <img src="img/book-02.png" srcset="img/book-02@2x.png 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(в)</span>
+          </div>
+        </div>
+        <div class="row row-offset-20 d-none-desktop">
+          <div class="col-1">
+            <span class="txt-22">(в)</span>
+          </div>
+          <div class="col-5">
+            <picture>
+              <img src="img/book-02.png" srcset="img/book-02@2x.png 2x" alt="Image">
+            </picture>
+          </div>
+        </div>
+        <div class="row row-offset-80">
+          <div class="col-3 col-mobile-6">
+            <span class="txt-22">Каждый новый раздел книги мы украсили шмуцтитулами (заглавными страницами) с серебряным
+              тиснением, которые перекликаются с обложкой книги. </span>
+          </div>
+        </div>
+        <div class="row row-offset-40">
+          <div class="col-5 col-mobile-6">
+            <picture>
+              <img src="img/work-03.jpg" srcset="img/work-03@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22">(г)</span>
+          </div>
+        </div>
+        <div class="row row-offset-10 d-none-desktop">
+          <div class="col-1">
+            <span class="txt-22">(г)</span>
+          </div>
+        </div>
+        <div class="row row-offset-80 row-offset-mobile-160">
+          <div class="col-1 col-mobile-6">
+            <span class="txt-22 txt-16-mobile uppercase">Решение</span>
+          </div>
+          <div class="col-4 col-offset-1 d-none-mobile">
+            <span class="txt-88 lh-1 ">Мы сделали не просто каталог, <br>а роскошную книгу, которую приятно листать и
+              трогать.</span>
+          </div>
+        </div>
+        <div class="row row-offset-20 d-none-desktop">
+          <div class="col-5 col-offset-1">
+            <span class="txt-44">Мы сделали не просто каталог, <br>а роскошную книгу, которую приятно листать и
+              трогать.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of main -->
+    <!-- team -->
+    <div class="team" id="team">
+      <span class="team__title">Команда</span>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Yaroslav Samoylov</span>
+            <span class="team__position">UI/UX</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Zhdan Philippov</span>
+            <span class="team__position">Designer</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Vadim Loginov</span>
+            <span class="team__position">FrontEnd</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Aleksandr Borovykh</span>
+            <span class="team__position">Backend</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Konstantin Osintsev</span>
+            <span class="team__position">Art director</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Alrosa</span>
+            <span class="team__position">Client</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">2019</span>
+            <span class="team__position">Year</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Diamonds</span>
+            <span class="team__position">Industry</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Book Design</span>
+            <span class="team__position">Type</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- end of team -->
   </div>
-  <!-- end of image -->
-  <!-- main -->
-  <section class="main" id="main">
-    <div class="container">
-      <div class="row row-offset-80">
-        <div class="col-1 col-mobile-6">
-          <span class="txt-22 txt-16-mobile uppercase">задача</span>
-        </div>
-        <div class="col-3 d-none-mobile">
-          <span class="txt-44">Сделать дизайн каталога алмазов и бриллиантов Алроса, </span>
-        </div>
-      </div>
-      <div class="row d-none-mobile">
-        <div class="col-4">
-          <span class="txt-44">который расскажет про их историю, классификацию и ценность.</span>
-        </div>
-      </div>
-      <div class="row row-offset-10 d-none-desktop">
-        <div class="col-6">
-          <span class="txt-44">Сделать дизайн каталога алмазов и бриллиантов Алроса, который расскажет про их историю,
-            классификацию и ценность.</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-160">
-        <div class="col-1">
-          <span class="txt-22">1.</span>
-        </div>
-        <div class="col-3 col-mobile-4">
-          <span class="txt-22">Алроса — крупнейшая в мире алмазодобывающая компания. На долю которой приходится более
-            четверти мировой добычи алмазов.</span>
-        </div>
-      </div>
-      <div class="row row-offset-40">
-        <div class="col-1">
-          <span class="txt-22">2.</span>
-        </div>
-        <div class="col-3 col-mobile-4">
-          <span class="txt-22">Производители ювелирных украшений покупают неограненные камни боксами. Им нужен печатный
-            каталог, в котором будет отражено все многообразие алмазов. И будут доступны подробные
-            характеристики.</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-160">
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22 uppercase">Решение</span>
-        </div>
-        <div class="col-4 col-mobile-5 col-offset-mobile-1">
-          <span class="txt-88 lh-1 txt-44-mobile">Мы сделали не просто каталог, <br>а роскошную книгу, которую приятно
-            листать и трогать.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- image -->
-  <div class="image mt-80" style="min-height: 955px;">
-    <picture class="image__picture">
-      <img src="img/work-02.jpg" srcset="img/work-02@2x.jpg 2x" alt="Image">
-    </picture>
-    <div class="image__wrapper bottom mobile-top" style="--bottom: 122px; --mobile-top: 40px;">
-      <div class="row">
-        <div class="col-2 col-offset-3 col-mobile-5 col-offset-mobile-0">
-          <span class="txt-22">Для удобства клиентов мы поделили объемное издание каталога на два тома. Для каждого из
-            них мы изготовили прозрачный пластиковый кейс с фирменным узором и названием, которое согласуется обложкой
-            книги и гармонично дополняет ее. </span>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(а)</span>
-        </div>
-      </div>
-      <div class="row row-offset-40 d-none-desktop">
-        <div class="col-6">
-          <span class="txt-22">(а)</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end of image -->
-  <!-- main -->
-  <section class="main" id="main">
-    <div class="container">
-      <div class="row row-offset-80">
-        <div class="col-1 col-mobile-4">
-          <span class="txt-22">Для переплета книги мы выбрали цветной картон фирменного оттенка Алроса <br>и оформили
-            его с помощью тиснения серебряной фольгой. </span>
-        </div>
-        <div class="col-2 d-none-mobile">
-          <picture>
-            <img src="img/book-01.png" srcset="img/book-01@2x.png 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(б)</span>
-        </div>
-      </div>
-      <div class="row row-offset-20 d-none-desktop">
-        <div class="col-5">
-          <picture>
-            <img src="img/book-01.png" srcset="img/book-01@2x.png 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1">
-          <span class="txt-22">(б)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80">
-        <div class="col-1 col-offset-1 col-mobile-5">
-          <span class="txt-22">Срез самой книги мы тоже сделали серебристым, чтобы при перелисты-вании страниц он
-            напоминал переливающиеся сверкание бриллиантов. </span>
-        </div>
-        <div class="col-3 d-none-mobile">
-          <picture>
-            <img src="img/book-02.png" srcset="img/book-02@2x.png 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(в)</span>
-        </div>
-      </div>
-      <div class="row row-offset-20 d-none-desktop">
-        <div class="col-1">
-          <span class="txt-22">(в)</span>
-        </div>
-        <div class="col-5">
-          <picture>
-            <img src="img/book-02.png" srcset="img/book-02@2x.png 2x" alt="Image">
-          </picture>
-        </div>
-      </div>
-      <div class="row row-offset-80">
-        <div class="col-3 col-mobile-6">
-          <span class="txt-22">Каждый новый раздел книги мы украсили шмуцтитулами (заглавными страницами) с серебряным
-            тиснением, которые перекликаются с обложкой книги. </span>
-        </div>
-      </div>
-      <div class="row row-offset-40">
-        <div class="col-5 col-mobile-6">
-          <picture>
-            <img src="img/work-03.jpg" srcset="img/work-03@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22">(г)</span>
-        </div>
-      </div>
-      <div class="row row-offset-10 d-none-desktop">
-        <div class="col-1">
-          <span class="txt-22">(г)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-160">
-        <div class="col-1 col-mobile-6">
-          <span class="txt-22 txt-16-mobile uppercase">Решение</span>
-        </div>
-        <div class="col-4 col-offset-1 d-none-mobile">
-          <span class="txt-88 lh-1 ">Мы сделали не просто каталог, <br>а роскошную книгу, которую приятно листать и
-            трогать.</span>
-        </div>
-      </div>
-      <div class="row row-offset-20 d-none-desktop">
-        <div class="col-5 col-offset-1">
-          <span class="txt-44">Мы сделали не просто каталог, <br>а роскошную книгу, которую приятно листать и
-            трогать.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- end of main -->
-  <!-- team -->
-  <div class="team" id="team">
-    <span class="team__title">Команда</span>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Yaroslav Samoylov</span>
-          <span class="team__position">UI/UX</span>
-        </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Zhdan Philippov</span>
-          <span class="team__position">Designer</span>
-        </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Vadim Loginov</span>
-          <span class="team__position">FrontEnd</span>
-        </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Aleksandr Borovykh</span>
-          <span class="team__position">Backend</span>
-        </div>
-      </li>
-    </ul>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Konstantin Osintsev</span>
-          <span class="team__position">Art director</span>
-        </div>
-      </li>
-    </ul>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Alrosa</span>
-          <span class="team__position">Client</span>
-        </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">2019</span>
-          <span class="team__position">Year</span>
-        </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Diamonds</span>
-          <span class="team__position">Industry</span>
-        </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Book Design</span>
-          <span class="team__position">Type</span>
-        </div>
-      </li>
-    </ul>
-  </div>
-  <!-- end of team -->
+
+  <!-- scripts -->
   @@include('components/_scripts.html')
 </body>
 
