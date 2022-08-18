@@ -5,242 +5,249 @@
 })
 
 <body>
-  @@include('components/_header.html', {
-  "page": "/about/"
-  })
-  @@include('components/_mobile-menu.html')
-  @@include('components/_logotype.html')
-  <!-- image -->
-  <div class="image" style="min-height: 450px;">
-    <picture class="image__picture">
-      <img src="img/zeronix.png" srcset="img/zeronix@2x.png 2x" alt="Image">
-    </picture>
-    <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
-      <div class="row">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">{Контейнеры для сбора отходов}</span>
+  <div class="wrapper" data-scroller>
+    @@include('components/_header.html', {
+    "page": "/Zeronix/"
+    })
+    @@include('components/_mobile-menu.html')
+    @@include('components/_logotype.html')
+    <!-- image -->
+    <div class="image image--black" style="min-height: 450px;" data-section="black">
+      <picture class="image__picture">
+        <img src="img/zeronix.png" srcset="img/zeronix@2x.png 2x" alt="Image">
+      </picture>
+      <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
+        <div class="row">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">{Контейнеры для сбора отходов}</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">(Zeronix)</span>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">(Zeronix)</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">[Объект]</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end of image -->
-  <!-- main -->
-  <section class="main" id="main">
-    <div class="container">
-      <div class="row row-offset-80">
-        <div class="col-1">
-          <span class="txt-22">1</span>
-        </div>
-        <div class="col-3 col-mobile-5">
-          <span class="txt-22">Компания Zeronix разрабоатывает технологии переработки мусора. </span>
-        </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-20">
-        <div class="col-1">
-          <span class="txt-22">2</span>
-        </div>
-        <div class="col-3 col-mobile-5">
-          <span class="txt-22">У стартапа есть уникальный продукт: переработка упаковки и одноразовой посуды из
-            композитного картона.</span>
-        </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-20">
-        <div class="col-1">
-          <span class="txt-22">3</span>
-        </div>
-        <div class="col-3 col-mobile-5">
-          <span class="txt-22">Также компания перерабатывает другие виды вторсырья. </span>
-        </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-20">
-        <div class="col-1">
-          <span class="txt-22">4</span>
-        </div>
-        <div class="col-3 col-mobile-5">
-          <span class="txt-22">Компания готовит к запуску программу по сбору отходов в кафе, ресторанах и фудкортах.
-            Чтобы вся посуда сразу после использования попадала на переработку. </span>
-        </div>
-      </div>
-      <div class="row row-offset-80">
-        <div class="col-4 col-offset-1 col-mobile-5 col-offset-mobile-0">
-          <span class="txt-44">Перед нами стояла задача разработать контейнеры для сбора отходов. </span>
-        </div>
-      </div>
-      <div class="row row-offset-160 row-offset-mobile-40">
-        <div class="col-4 col-mobile-6">
-          <picture>
-            <img src="img/zeronix-01.png" srcset="img/zeronix-01@2x.png 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(1.1)</span>
-        </div>
-        <div class="col-2 d-none-mobile">
-          <picture>
-            <img src="img/zeronix-02.png" srcset="img/zeronix-02@2x.png 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(1.2)</span>
-        </div>
-      </div>
-      <div class="row row-offset-20 d-none-desktop">
-        <div class="col-3 col-offset-3">
-          <picture>
-            <img src="img/zeronix-02.png" srcset="img/zeronix-02@2x.png 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(1.2)</span>
-        </div>
-      </div>
-      <div class="row row-offset-80">
-        <div class="col-2 col-offset-1 col-mobile-6 col-offset-mobile-0">
-          <span class="txt-22">Баки для мусора предполагается размещать в кафе и ресторанах, поэтому они должны быть
-            красивыми и выглядеть как часть интерьера. </span>
-        </div>
-      </div>
-      <div class="row row-offset-40">
-        <div class="col-2 col-offset-1 col-mobile-6 col-offset-mobile-0">
-          <span class="txt-22">Для разных типов отходов мы ввели систему цветового кодирования. Мы не можем работать с
-            унылыми оттенками, поэтому все контейнеры покрашены в насыщенные цвета. </span>
-        </div>
-      </div>
-      <div class="row row-offset-80">
-        <div class="col-2 col-mobile-3">
-          <picture>
-            <img src="img/zeronix-10.png" srcset="img/zeronix-10@2x.png 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(2.1)</span>
-        </div>
-        <div class="col-2 col-mobile-3">
-          <picture>
-            <img src="img/zeronix-11.png" srcset="img/zeronix-11@2x.png 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(2.2)</span>
-        </div>
-        <div class="col-2 d-none-mobile">
-          <span class="txt-22">
-            У каждого бака есть удобные ручки из бронированной синтетической стропы (как ручки у сумки IKEA). За них
-            удобно перемещать и выгружать контейнер, а еще это выглядит классно и неожиданно.
-            <br><br>
-            Картонные одноразовые контейнеры в качестве ручек имеют большие круглые отверстия.
-          </span>
-        </div>
-      </div>
-      <div class="row row-offset-40 d-none-desktop">
-        <div class="col-5">
-          <span class="txt-22">
-            У каждого бака есть удобные ручки из бронированной синтетической стропы (как ручки у сумки IKEA). За них
-            удобно перемещать и выгружать контейнер, а еще это выглядит классно и неожиданно.
-            <br><br>
-            Картонные одноразовые контейнеры в качестве ручек имеют большие круглые отверстия.
-          </span>
-        </div>
-      </div>
-      <div class="row row-offset-80">
-        <div class="col-4 col-offset-1 col-mobile-6 col-offset-mobile-0">
-          <span class="txt-22 uppercase">Для пиццерий будет отдельный бак для сбора коробок от пиццы. Мы придумали
-            сделать одноразовый картонный контейнер, который сразу вместе с мусором пойдет на переработку – это гораздо
-            проще, чем обслуживать металлический или пластиковый бак.</span>
-        </div>
-      </div>
-      <div class="row row-offset-160 d-none-desktop">
-        <div class="col-3">
-          <picture>
-            <img src="img/zeronix-20.png" srcset="img/zeronix-20@2x.png 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 top-end">
-          <span class="txt-16 mt-10">(3.1)</span>
-        </div>
-      </div>
-      <div class="row row-offset-160 row-offset-mobile-20">
-        <div class="col-2 d-none-mobile">
-          <picture>
-            <img src="img/zeronix-20.png" srcset="img/zeronix-20@2x.png 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(3.1)</span>
-        </div>
-        <div class="col-4 col-mobile-6">
-          <picture>
-            <img src="img/zeronix-21.png" srcset="img/zeronix-21@2x.png 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(3.2)</span>
-          <span class="txt-22 mt-40 d-none-mobile">Для батареек и стаканчиков мы сделали узкие пеналы, в которые
-            невозможно запихнуть крупный мусор. Они могут стоять на полу или крепиться к стене. </span>
-        </div>
-      </div>
-      <div class="row row-offset-20 d-none-desktop">
-        <div class="col-4 col-offset-2">
-          <span class="txt-22">Для батареек и стаканчиков мы сделали узкие пеналы, в которые невозможно запихнуть
-            крупный мусор. Они могут стоять на полу или крепиться к стене. </span>
-        </div>
-      </div>
-      <div class="row row-offset-160">
-        <div class="col-6">
-          <h3 class="txt-44 uppercase">Классный проект! И еще раз благодарим коллег из Zeronix, которые приняли и
-            согласовали концепцию почти с первого раза. Боженька, пусть так на всех проектах будет.</h3>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">[Объект]</span>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end of main -->
-  <!-- team -->
-  <div class="team" id="team">
-    <span class="team__title">Команда</span>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Вадим Сусевич</span>
-          <span class="team__position">UI/UX</span>
+    <!-- end of image -->
+    <!-- main -->
+    <section class="main" id="main-01" data-section="white">
+      <div class="container">
+        <div class="row row-offset-80">
+          <div class="col-1">
+            <span class="txt-22">1</span>
+          </div>
+          <div class="col-3 col-mobile-5">
+            <span class="txt-22">Компания Zeronix разрабоатывает технологии переработки мусора. </span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Денис Рыбкин</span>
-          <span class="team__position">Разработчик</span>
+        <div class="row row-offset-40 row-offset-mobile-20">
+          <div class="col-1">
+            <span class="txt-22">2</span>
+          </div>
+          <div class="col-3 col-mobile-5">
+            <span class="txt-22">У стартапа есть уникальный продукт: переработка упаковки и одноразовой посуды из
+              композитного картона.</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Konstantin Osintsev</span>
-          <span class="team__position">Art director</span>
+        <div class="row row-offset-40 row-offset-mobile-20">
+          <div class="col-1">
+            <span class="txt-22">3</span>
+          </div>
+          <div class="col-3 col-mobile-5">
+            <span class="txt-22">Также компания перерабатывает другие виды вторсырья. </span>
+          </div>
         </div>
-      </li>
-    </ul>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">SPAAACE</span>
-          <span class="team__position">Клиент</span>
+        <div class="row row-offset-40 row-offset-mobile-20">
+          <div class="col-1">
+            <span class="txt-22">4</span>
+          </div>
+          <div class="col-3 col-mobile-5">
+            <span class="txt-22">Компания готовит к запуску программу по сбору отходов в кафе, ресторанах и фудкортах.
+              Чтобы вся посуда сразу после использования попадала на переработку. </span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">2020</span>
-          <span class="team__position">год</span>
+        <div class="row row-offset-80">
+          <div class="col-4 col-offset-1 col-mobile-5 col-offset-mobile-0">
+            <span class="txt-44">Перед нами стояла задача разработать контейнеры для сбора отходов. </span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Программное обеспечение</span>
-          <span class="team__position">Индустрия</span>
+        <div class="row row-offset-160 row-offset-mobile-40">
+          <div class="col-4 col-mobile-6">
+            <picture>
+              <img src="img/zeronix-01.png" srcset="img/zeronix-01@2x.png 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(1.1)</span>
+          </div>
+          <div class="col-2 d-none-mobile">
+            <picture>
+              <img src="img/zeronix-02.png" srcset="img/zeronix-02@2x.png 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(1.2)</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Приложение</span>
-          <span class="team__position">Направление</span>
+        <div class="row row-offset-20 d-none-desktop">
+          <div class="col-3 col-offset-3">
+            <picture>
+              <img src="img/zeronix-02.png" srcset="img/zeronix-02@2x.png 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(1.2)</span>
+          </div>
         </div>
-      </li>
-    </ul>
+        <div class="row row-offset-80">
+          <div class="col-2 col-offset-1 col-mobile-6 col-offset-mobile-0">
+            <span class="txt-22">Баки для мусора предполагается размещать в кафе и ресторанах, поэтому они должны быть
+              красивыми и выглядеть как часть интерьера. </span>
+          </div>
+        </div>
+        <div class="row row-offset-40">
+          <div class="col-2 col-offset-1 col-mobile-6 col-offset-mobile-0">
+            <span class="txt-22">Для разных типов отходов мы ввели систему цветового кодирования. Мы не можем работать с
+              унылыми оттенками, поэтому все контейнеры покрашены в насыщенные цвета. </span>
+          </div>
+        </div>
+        <div class="row row-offset-80">
+          <div class="col-2 col-mobile-3">
+            <picture>
+              <img src="img/zeronix-10.png" srcset="img/zeronix-10@2x.png 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(2.1)</span>
+          </div>
+          <div class="col-2 col-mobile-3">
+            <picture>
+              <img src="img/zeronix-11.png" srcset="img/zeronix-11@2x.png 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(2.2)</span>
+          </div>
+          <div class="col-2 d-none-mobile">
+            <span class="txt-22">
+              У каждого бака есть удобные ручки из бронированной синтетической стропы (как ручки у сумки IKEA). За них
+              удобно перемещать и выгружать контейнер, а еще это выглядит классно и неожиданно.
+              <br><br>
+              Картонные одноразовые контейнеры в качестве ручек имеют большие круглые отверстия.
+            </span>
+          </div>
+        </div>
+        <div class="row row-offset-40 d-none-desktop">
+          <div class="col-5">
+            <span class="txt-22">
+              У каждого бака есть удобные ручки из бронированной синтетической стропы (как ручки у сумки IKEA). За них
+              удобно перемещать и выгружать контейнер, а еще это выглядит классно и неожиданно.
+              <br><br>
+              Картонные одноразовые контейнеры в качестве ручек имеют большие круглые отверстия.
+            </span>
+          </div>
+        </div>
+        <div class="row row-offset-80">
+          <div class="col-4 col-offset-1 col-mobile-6 col-offset-mobile-0">
+            <span class="txt-22 uppercase">Для пиццерий будет отдельный бак для сбора коробок от пиццы. Мы придумали
+              сделать одноразовый картонный контейнер, который сразу вместе с мусором пойдет на переработку – это
+              гораздо
+              проще, чем обслуживать металлический или пластиковый бак.</span>
+          </div>
+        </div>
+        <div class="row row-offset-160 d-none-desktop">
+          <div class="col-3">
+            <picture>
+              <img src="img/zeronix-20.png" srcset="img/zeronix-20@2x.png 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 top-end">
+            <span class="txt-16 mt-10">(3.1)</span>
+          </div>
+        </div>
+        <div class="row row-offset-160 row-offset-mobile-20">
+          <div class="col-2 d-none-mobile">
+            <picture>
+              <img src="img/zeronix-20.png" srcset="img/zeronix-20@2x.png 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(3.1)</span>
+          </div>
+          <div class="col-4 col-mobile-6">
+            <picture>
+              <img src="img/zeronix-21.png" srcset="img/zeronix-21@2x.png 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(3.2)</span>
+            <span class="txt-22 mt-40 d-none-mobile">Для батареек и стаканчиков мы сделали узкие пеналы, в которые
+              невозможно запихнуть крупный мусор. Они могут стоять на полу или крепиться к стене. </span>
+          </div>
+        </div>
+        <div class="row row-offset-20 d-none-desktop">
+          <div class="col-4 col-offset-2">
+            <span class="txt-22">Для батареек и стаканчиков мы сделали узкие пеналы, в которые невозможно запихнуть
+              крупный мусор. Они могут стоять на полу или крепиться к стене. </span>
+          </div>
+        </div>
+        <div class="row row-offset-160">
+          <div class="col-6">
+            <h3 class="txt-44 uppercase">Классный проект! И еще раз благодарим коллег из Zeronix, которые приняли и
+              согласовали концепцию почти с первого раза. Боженька, пусть так на всех проектах будет.</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main" id="main-02" data-section="black">
+      
+    </section>
+    <!-- end of main -->
+    <!-- team -->
+    <div class="team" id="team">
+      <span class="team__title">Команда</span>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Вадим Сусевич</span>
+            <span class="team__position">UI/UX</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Денис Рыбкин</span>
+            <span class="team__position">Разработчик</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Konstantin Osintsev</span>
+            <span class="team__position">Art director</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">SPAAACE</span>
+            <span class="team__position">Клиент</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">2020</span>
+            <span class="team__position">год</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Программное обеспечение</span>
+            <span class="team__position">Индустрия</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Приложение</span>
+            <span class="team__position">Направление</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- end of team -->
   </div>
-  <!-- end of team -->
+
   <!-- scripts -->
   @@include('components/_scripts.html')
 </body>
