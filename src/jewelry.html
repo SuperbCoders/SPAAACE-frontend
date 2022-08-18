@@ -5,195 +5,200 @@
 })
 
 <body>
-  @@include('components/_header.html', {
-  "page": "/about/"
-  })
-  @@include('components/_mobile-menu.html')
-  @@include('components/_logotype.html')
-  <!-- image -->
-  <div class="image" style="min-height: 450px;">
-    <picture class="image__picture">
-      <img src="img/jewelry.jpg" srcset="img/jewelry@2x.jpg 2x" alt="Image">
-    </picture>
-    <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
-      <div class="row">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">{Коллекция украшений}</span>
+  <div class="wrapper" data-scroller>
+    @@include('components/_header.html', {
+    "page": "/Alrosa jewelry/"
+    })
+    @@include('components/_mobile-menu.html')
+    @@include('components/_logotype.html')
+    <!-- image -->
+    <div class="image image--black" style="min-height: 450px;" data-section="black">
+      <picture class="image__picture">
+        <img src="img/jewelry.jpg" srcset="img/jewelry@2x.jpg 2x" alt="Image">
+      </picture>
+      <div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 20px;">
+        <div class="row">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">{Коллекция украшений}</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">(Алроса)</span>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">(Алроса)</span>
+          </div>
         </div>
-      </div>
-      <div class="row row-offset-40 row-offset-mobile-10">
-        <div class="col-6">
-          <span class="txt-88 txt-44-mobile uppercase">[Упаковка]</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end of image -->
-  <!-- main -->
-  <section class="main" id="main">
-    <div class="container">
-      <div class="row row-offset-80 d-none-desktop">
-        <div class="col-1">
-          <span class="txt-22 uppercase">задача</span>
-        </div>
-      </div>
-      <div class="row row-offset-160 row-offset-mobile-20">
-        <div class="col-1 d-none-mobile">
-          <span class="txt-22 uppercase">задача</span>
-        </div>
-        <div class="col-4 col-mobile-5">
-          <span class="txt-44">У нас была задача немного по-новому взглянуть на традиционную упаковку ювелирных изделий.
-          </span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-40">
-        <div class="col-4 col-offset-1 col-mobile-5">
-          <span class="txt-22">Ювелирное подразделение Алросы перезапускало розничное направление по производству
-            украшений. Нужна была упаковка для колец, сережек, подвесок.</span>
-        </div>
-      </div>
-      <div class="row row-offset-160">
-        <div class="col-2 col-offset-1 col-mobile-5 col-offset-mobile-0">
-          <span class="txt-22">Мы практически не могли влиять на форму коробки, зато для поиска идеи у нас была полная
-            свобода в выборе материалов.</span>
-        </div>
-      </div>
-      <div class="row row-offset-80 row-offset-mobile-40">
-        <div class="col-3 col-mobile-6">
-          <picture>
-            <img src="img/jewelry-01.jpg" srcset="img/jewelry-01@2x.jpg 2x" alt="Image">
-          </picture>
-          <span class="txt-22 txt-16-mobile mt-10">(а)</span>
-        </div>
-        <div class="col-1 col-offset-1 d-none-mobile">
-          <picture>
-            <img src="img/jewelry-02.jpg" srcset="img/jewelry-02@2x.jpg 2x" alt="Image">
-          </picture>
-          <span class="txt-22 mt-10">(б)</span>
-        </div>
-      </div>
-      <div class="row row-offset-40 d-none-desktop">
-        <div class="col-4 col-offset-2">
-          <picture>
-            <img src="img/jewelry-02.jpg" srcset="img/jewelry-02@2x.jpg 2x" alt="Image">
-          </picture>
-          <span class="txt-16 mt-10">(б)</span>
-        </div>
-      </div>
-      <div class="row row-offset-40">
-        <div class="col-2 col-offset-1 col-mobile-5 col-offset-mobile-0">
-          <span class="txt-22">Конечно же, мы предложили яркие цвета <br>и игру с текстурой и прозрачностью материалов.
-            Получилось норм.</span>
-        </div>
-      </div>
-      <div class="row row-offset-80">
-        <div class="col-2 col-mobile-4">
-          <picture>
-            <img src="img/jewelry-03.jpg" srcset="img/jewelry-03@2x.jpg 2x" alt="Image">
-          </picture>
-          <span class="txt-22 mt-10 d-none-mobile">(в)</span>
-        </div>
-        <div class="col-1 d-none-desktop top-end">
-          <span class="txt-16">(в)</span>
-        </div>
-        <div class="col-2 d-none-mobile">
-          <picture>
-            <img src="img/jewelry-04.jpg" srcset="img/jewelry-04@2x.jpg 2x" alt="Image">
-          </picture>
-          <span class="txt-22 mt-10">(г)</span>
-        </div>
-        <div class="col-2 d-none-mobile">
-          <span class="txt-22">Но в производство ушли коробочки традиционных тонов.</span>
-        </div>
-      </div>
-      <div class="row row-offset-40 d-none-desktop">
-        <div class="col-4">
-          <picture>
-            <img src="img/jewelry-04.jpg" srcset="img/jewelry-04@2x.jpg 2x" alt="Image">
-          </picture>
-        </div>
-        <div class="col-1 top-end">
-          <span class="txt-16">(г)</span>
-        </div>
-      </div>
-      <div class="row row-offset-40 d-none-desktop">
-        <div class="col-5">
-          <span class="txt-22">Но в производство ушли коробочки традиционных тонов.</span>
+        <div class="row row-offset-40 row-offset-mobile-10">
+          <div class="col-6">
+            <span class="txt-88 txt-44-mobile uppercase">[Упаковка]</span>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- end of main -->
-  <!-- team -->
-  <div class="team" id="team">
-    <span class="team__title">Команда</span>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Yaroslav Samoylov</span>
-          <span class="team__position">UI/UX</span>
+    <!-- end of image -->
+    <!-- main -->
+    <section class="main" id="main" data-section="white">
+      <div class="container">
+        <div class="row row-offset-80 d-none-desktop">
+          <div class="col-1">
+            <span class="txt-22 uppercase">задача</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Zhdan Philippov</span>
-          <span class="team__position">Designer</span>
+        <div class="row row-offset-160 row-offset-mobile-20">
+          <div class="col-1 d-none-mobile">
+            <span class="txt-22 uppercase">задача</span>
+          </div>
+          <div class="col-4 col-mobile-5">
+            <span class="txt-44">У нас была задача немного по-новому взглянуть на традиционную упаковку ювелирных
+              изделий.
+            </span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Vadim Loginov</span>
-          <span class="team__position">FrontEnd</span>
+        <div class="row row-offset-80 row-offset-mobile-40">
+          <div class="col-4 col-offset-1 col-mobile-5">
+            <span class="txt-22">Ювелирное подразделение Алросы перезапускало розничное направление по производству
+              украшений. Нужна была упаковка для колец, сережек, подвесок.</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Aleksandr Borovykh</span>
-          <span class="team__position">Backend</span>
+        <div class="row row-offset-160">
+          <div class="col-2 col-offset-1 col-mobile-5 col-offset-mobile-0">
+            <span class="txt-22">Мы практически не могли влиять на форму коробки, зато для поиска идеи у нас была полная
+              свобода в выборе материалов.</span>
+          </div>
         </div>
-      </li>
-    </ul>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Konstantin Osintsev</span>
-          <span class="team__position">Art director</span>
+        <div class="row row-offset-80 row-offset-mobile-40">
+          <div class="col-3 col-mobile-6">
+            <picture>
+              <img src="img/jewelry-01.jpg" srcset="img/jewelry-01@2x.jpg 2x" alt="Image">
+            </picture>
+            <span class="txt-22 txt-16-mobile mt-10">(а)</span>
+          </div>
+          <div class="col-1 col-offset-1 d-none-mobile">
+            <picture>
+              <img src="img/jewelry-02.jpg" srcset="img/jewelry-02@2x.jpg 2x" alt="Image">
+            </picture>
+            <span class="txt-22 mt-10">(б)</span>
+          </div>
         </div>
-      </li>
-    </ul>
-    <ul class="team__list">
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Alrosa</span>
-          <span class="team__position">Client</span>
+        <div class="row row-offset-40 d-none-desktop">
+          <div class="col-4 col-offset-2">
+            <picture>
+              <img src="img/jewelry-02.jpg" srcset="img/jewelry-02@2x.jpg 2x" alt="Image">
+            </picture>
+            <span class="txt-16 mt-10">(б)</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">2019</span>
-          <span class="team__position">Year</span>
+        <div class="row row-offset-40">
+          <div class="col-2 col-offset-1 col-mobile-5 col-offset-mobile-0">
+            <span class="txt-22">Конечно же, мы предложили яркие цвета <br>и игру с текстурой и прозрачностью
+              материалов.
+              Получилось норм.</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Diamonds</span>
-          <span class="team__position">Industry</span>
+        <div class="row row-offset-80">
+          <div class="col-2 col-mobile-4">
+            <picture>
+              <img src="img/jewelry-03.jpg" srcset="img/jewelry-03@2x.jpg 2x" alt="Image">
+            </picture>
+            <span class="txt-22 mt-10 d-none-mobile">(в)</span>
+          </div>
+          <div class="col-1 d-none-desktop top-end">
+            <span class="txt-16">(в)</span>
+          </div>
+          <div class="col-2 d-none-mobile">
+            <picture>
+              <img src="img/jewelry-04.jpg" srcset="img/jewelry-04@2x.jpg 2x" alt="Image">
+            </picture>
+            <span class="txt-22 mt-10">(г)</span>
+          </div>
+          <div class="col-2 d-none-mobile">
+            <span class="txt-22">Но в производство ушли коробочки традиционных тонов.</span>
+          </div>
         </div>
-      </li>
-      <li class="team__item">
-        <div class="team__elem">
-          <span class="team__name">Book Design</span>
-          <span class="team__position">Type</span>
+        <div class="row row-offset-40 d-none-desktop">
+          <div class="col-4">
+            <picture>
+              <img src="img/jewelry-04.jpg" srcset="img/jewelry-04@2x.jpg 2x" alt="Image">
+            </picture>
+          </div>
+          <div class="col-1 top-end">
+            <span class="txt-16">(г)</span>
+          </div>
         </div>
-      </li>
-    </ul>
+        <div class="row row-offset-40 d-none-desktop">
+          <div class="col-5">
+            <span class="txt-22">Но в производство ушли коробочки традиционных тонов.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of main -->
+    <!-- team -->
+    <div class="team" id="team">
+      <span class="team__title">Команда</span>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Yaroslav Samoylov</span>
+            <span class="team__position">UI/UX</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Zhdan Philippov</span>
+            <span class="team__position">Designer</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Vadim Loginov</span>
+            <span class="team__position">FrontEnd</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Aleksandr Borovykh</span>
+            <span class="team__position">Backend</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Konstantin Osintsev</span>
+            <span class="team__position">Art director</span>
+          </div>
+        </li>
+      </ul>
+      <ul class="team__list">
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Alrosa</span>
+            <span class="team__position">Client</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">2019</span>
+            <span class="team__position">Year</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Diamonds</span>
+            <span class="team__position">Industry</span>
+          </div>
+        </li>
+        <li class="team__item">
+          <div class="team__elem">
+            <span class="team__name">Book Design</span>
+            <span class="team__position">Type</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- end of team -->
   </div>
-  <!-- end of team -->
+
   <!-- scripts -->
   @@include('components/_scripts.html')
 </body>
