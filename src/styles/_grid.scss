@@ -15,23 +15,23 @@
 }
 
 .row-offset-10 {
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .row-offset-20 {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .row-offset-40 {
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .row-offset-80 {
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
 .row-offset-160 {
-    margin-top: 160px;
+    padding-top: 160px;
 }
 
 @media screen and (max-width: 991px) {
@@ -108,27 +108,27 @@
         flex: 0 0 16.67%;
         max-width: 16.67%;
     }
-    
+
     .col-mobile-2 {
         flex: 0 0 33.33%;
         max-width: 33.33%;
     }
-    
+
     .col-mobile-3 {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    
+
     .col-mobile-4 {
         flex: 0 0 66.67%;
         max-width: 66.67%;
     }
-    
+
     .col-mobile-5 {
         flex: 0 0 83.34%;
         max-width: 83.34%;
     }
-    
+
     .col-mobile-6 {
         flex: 0 0 100%;
         max-width: 100%;
