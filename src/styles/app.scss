@@ -264,6 +264,11 @@
   &__elem {
     display: flex;
     align-items: flex-end;
+
+    @media screen and (max-width: 767px) {
+      align-items: center;
+      overflow: hidden;
+    }
   }
   &__name {
     display: block;
@@ -273,6 +278,8 @@
 
     @media screen and (max-width: 767px) {
       font-size: 20px;
+      flex-grow: 0;
+      flex-shrink: 0;
     }
   }
   &__name + &__position {
@@ -284,6 +291,11 @@
     font-size: 16px;
     font-weight: normal;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
   }
 }
 
