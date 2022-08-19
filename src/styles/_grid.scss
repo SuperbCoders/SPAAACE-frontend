@@ -244,6 +244,10 @@
   margin-top: 160px;
 }
 
+.mt-320 {
+  margin-top: 320px;
+}
+
 @media screen and (max-width: 991px) {
   .mt-mobile-10 {
     margin-top: 10px;
@@ -263,5 +267,9 @@
 
   .mt-mobile-160 {
     margin-top: 160px;
+  }
+
+  .mt-mobile-320 {
+    margin-top: 320px;
   }
 }
