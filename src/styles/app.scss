@@ -231,10 +231,10 @@
   margin-bottom: -10px;
 
   @media screen and (min-width: 1920px) {
-    padding: 0 40px;
+    padding: 160px 40px 160px;
   }
   @media screen and (max-width: 767px) {
-    padding: 0 8px;
+    padding: 160px 8px 160px;
   }
 
   &__title {
@@ -270,6 +270,10 @@
     font-size: 22px;
     font-weight: normal;
     text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      font-size: 20px;
+    }
   }
   &__name + &__position {
     margin-left: 10px;
