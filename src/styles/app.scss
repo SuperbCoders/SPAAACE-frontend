@@ -127,6 +127,10 @@
   align-items: center;
 }
 
+.align-self-end {
+  align-self: flex-end;
+}
+
 .d-none-desktop {
   @media screen and (min-width: 992px) {
     display: none;
