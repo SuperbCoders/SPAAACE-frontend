@@ -134,4 +134,14 @@ document.addEventListener("DOMContentLoaded", function () {
   sections.forEach((section) => {
     observer.observe(section);
   });
+
+  const mobileRes = window.matchMedia("(max-width: 1440px)");
+  const mousePointerTouch = window.matchMedia("(pointer: coarse)");
+
+  if (mobileRes.matches && mousePointerTouch.matches) {
+    setTimeout(() => {
+      const theme = sections[0].dataset.section;
+      header.setAttribute("data-theme", theme);
+    }, 500);
+  }
 });
