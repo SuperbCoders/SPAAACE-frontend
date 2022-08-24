@@ -157,6 +157,16 @@
   background-color: $primary-color;
 }
 
+.main.keep {
+  margin-top: -78vw;
+}
+
+@media screen and (max-width: 991px) {
+  .main.keep {
+    margin-top: -67vw;
+  }
+}
+
 // image
 .image {
   position: relative;
