@@ -58,6 +58,12 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 991px) {
+  .uppercase-mobile {
+    text-transform: uppercase;
+  }
+}
+
 .light {
   font-weight: 300;
 }
@@ -249,6 +255,16 @@
   }
   @media screen and (max-width: 767px) {
     padding: 160px 8px 160px;
+  }
+
+  &--no-padding {
+    padding-bottom: 0;
+    padding-left: 0;
+
+    @media screen and (max-width: 991px) {
+      padding-top: 130px;
+      padding-bottom: 40px;
+    }  
   }
 
   &__title {
