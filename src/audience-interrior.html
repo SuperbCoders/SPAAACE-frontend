@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+@@include('components/_head.html', {
+    "lang": "ru",
+    "title": "spaaaace - Audience Interrior",
+})
+<body>
+    <div class="wrapper" data-scroller>
+        @@include('components/_header.html', {
+            "works": "header__item--active",
+            "page": "/works/"
+        })
+        @@include('components/_mobile-menu.html')
+        @@include('components/_logotype.html')
+    
+        <div class="image image--black" data-section="black">
+			<picture class="image__picture">
+				<source srcset="img/audience-07.jpg, img/audience-07@2x.jpg" media="(max-width: 767px)" type="image/jpeg">
+				<img class="top__image" src="img/audience-01.jpg" srcset="img/audience-01@2x.jpg 2x" alt="Image">
+			</picture>
+			<div class="image__wrapper top mobile-bottom" style="--top: 155px; --mobile-bottom: 50px;">
+              <div class="row">
+                <div class="col-6">
+                  <h1 class="txt-88 txt-44-mobile uppercase">{учебные аудитории}</span>
+                </div>
+              </div>
+              <div class="row row-offset-40 row-offset-mobile-10">
+                <div class="col-4">
+                  <span class="txt-88 txt-44-mobile uppercase">(алроса)</span>
+                </div>
+              </div>
+              <div class="row row-offset-40 row-offset-mobile-10">
+                <div class="col-6">
+                  <span class="txt-88 txt-44-mobile uppercase">[интерьер]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- main -->
+        <section class="main" id="main" data-section="white">
+            <div class="container">
+                <div class="row row-offset-40">
+                    <div class="col col-6">
+                        <span class="txt-16 uppercase">
+                            (1) Алроса — крупнейшая алмазодобывающая компания, мировой лидер по объему добычи и запасов алмазов. (2) Компания сотрудничает с ведущими ВУЗами в области подготовки инженеров. (3) Компания стремится создать приятную среду для обучения студентов.
+                        </span>
+                    </div>
+                </div>
+                <div class="row row-offset-80 row-offset-mobile-40">
+                    <div class="col-4 col-offset-1 col-mobile-6 col-offset-mobile-0">
+                        <span class="txt-44 txt-22-mobile">Российские государственные учебные заведения по-прежнему выглядят максимально уныло. Поэтому компания решила построить свои учебные аудитории. </span>
+                    </div>
+                </div>
+                <div class="row row-offset-10 row-offset-mobile-20">
+                    <div class="col col-1 col-offset-1 col-offset-mobile-0 col-mobile-2">
+                        <img src="img/audience-02.jpg" srcset="img/audience-02@2x.jpg 2x" alt="Image">
+                    </div>
+                    <div class="col-1 col-offset-mobile-0 col-mobile-2">
+                        <img src="img/audience-03.jpg" srcset="img/audience-03@2x.jpg 2x" alt="Image">
+                    </div>
+                    <div class="col-2 d-none-desktop align-self-end">
+                        <span class="txt-16">(так сейчас)</span>
+                    </div>
+                </div>
+                <div class="row row-offset-40 row-offset-mobile-80">
+                    <div class="col col-offset-1 col-3 col-offset-mobile-0 col-mobile-4">
+                        <span class="txt-22">
+                            Образовательная среда – очень важная для нас тема. Поэтому мы с радостью взялись за проект.
+                        </span>
+                    </div>
+
+                    <div class="col-2 d-none-desktop">
+                        <span class="txt-16">
+                            Перед нами стояла задача сделать интерьер аудиторий. 
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row row-offset-40 row-offset-mobile-80">
+                    <div class="col-3 col-offset-1 col-offset-mobile-0 col-mobile-6">
+                        <span class="txt-44">
+                            Мы придумали минималис<wbr>тичный монохромный интерьер про будущее. 
+                        </span>
+                    </div>
+                    <div class="col-1 col-offset-1 d-none-mobile">
+                        <span class="txt-22">
+                            Перед нами стояла задача сделать интерьер аудиторий. 
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row row-offset-130 row-offset-mobile-80">
+                    <div class="col-1">
+                        <span class="txt-16">360°</span>
+                    </div>
+                </div>
+            </div>
+
+            <video 
+                class="d-none-desktop"
+                width="100%" 
+                height="100%" 
+                loop 
+                muted 
+                autoplay 
+                src="video/audience.mp4" 
+                type="video/mp4"
+                playsinline
+            ></video>
+
+            <div class="pano" id="pano"></div>
+
+            <div class="container">
+                <div class="row row-offset-80">
+                    <div class="col col-1 col-mobile-3">
+                        <span class="txt-22 txt-16-mobile">
+                            Для эффективного использования пространства мы сделали длинные столы на 6 человек. 
+                        </span>
+                    </div>
+                    <div class="col col-1 col-mobile-3">
+                        <span class="txt-22 txt-16-mobile">
+                            Окна аудитории занавешены плотной тканью, которая закрывает всю стену. 
+                        </span>
+                    </div>
+                    <div class="col col-3 d-none-mobile">
+                        <img 
+                            style="width: 100%;"
+                            src="img/audience-04.jpg" 
+                            srcset="img/audience-04@2x.jpg 2x" 
+                            alt="Image"
+                        >
+                    </div>
+                    <div class="col-1 d-none-mobile">
+                        <span class="txt-22">a.</span>
+                    </div>
+                </div>
+
+                <div class="row d-none-desktop row-offset-20">
+                    <div class="col col-5">
+                        <img 
+                            style="width: 100%;"
+                            src="img/audience-04.jpg" 
+                            srcset="img/audience-04@2x.jpg 2x" 
+                            alt="Image"
+                        >
+                    </div>
+                    <div class="col-1">
+                        <span class="txt-16">a.</span>
+                    </div>
+                </div>
+
+                <div class="row row-offset-80">
+                    <div class="row col-2 col-mobile-6 wrap">
+                        <div class="col col-3">
+                            <span class="txt-22 txt-16-mobile">
+                                В интерьере активно использована типографика. 
+                            </span>
+                        </div>
+                        <div class="col col-3">
+                            <span class="txt-22 txt-16-mobile">
+                                Тут еще какой-то текст нужен, допишем
+                            </span>
+                        </div>
+                        <div class="col col-6 align-self-end d-none-mobile">
+                            <span class="txt-22 uppercase">
+                                У студентов снесет башку от такого дизайна. 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col col-3 d-none-mobile">
+                        <img 
+                            style="width: 100%;"
+                            src="img/audience-05.jpg" 
+                            srcset="img/audience-05@2x.jpg 2x" 
+                            alt="Image"
+                        >
+                    </div>
+                    <div class="col col-1 d-none-mobile">
+                        <span class="txt-22">b.</span>
+                    </div>
+                </div>
+
+                <div class="row row-offset-20">
+                    <div class="col col-5 d-none-desktop">
+                        <img 
+                            style="width: 100%;"
+                            src="img/audience-05.jpg" 
+                            srcset="img/audience-05@2x.jpg 2x" 
+                            alt="Image"
+                        >
+                    </div>
+                    <div class="col col-1 d-none-desktop">
+                        <span class="txt-16">b.</span>
+                    </div>
+                </div>
+                <div class="row row-offset-160 row-offset-mobile-80">
+                    <div class="col col-6">
+                        <img 
+                            style="width: 100%;"
+                            src="img/audience-06.jpg" 
+                            srcset="img/audience-06@2x.jpg 2x" 
+                            alt="Image"
+                        >
+                    </div>
+                </div>
+                <div class="row row-offset-10 row-offset-mobile-20">
+                    <div class="col col-5 col-mobile-6">
+                        <span class="txt-44 txt-22-mobile">
+                            Нас интересует только будущее, и как туда скорее попасть. Огромный зеркальный артворк на стене говорит об этом. 
+                        </span>
+                    </div>
+                    <div class="col col-1 d-none-mobile">
+                        <span class="txt-22 align-right" style="width: auto;">c.</span>
+                    </div>
+                </div>
+
+                <div class="row row-offset-40">
+                    <div class="col col-5">
+                        <span class="txt-88 txt-44-mobile">
+                            Отучившись в такой среде специалисты будут строить только креативное и светлое будущее.
+                        </span>
+                    </div>
+                </div>
+
+                <!-- team -->
+                <div class="team team--pulled" id="team">
+                    <span class="team__title">Команда</span>
+                    <ul class="team__list">
+                        <li class="team__item">
+                        <div class="team__elem">
+                            <span class="team__name">Андрей Жаботин</span>
+                            <span class="team__position">Визуализатор</span>
+                        </div>
+                        </li>
+                        <li class="team__item">
+                        <div class="team__elem">
+                            <span class="team__name">Афина Милосердная</span>
+                            <span class="team__position">Менеджер</span>
+                        </div>
+                        </li>
+                        <li class="team__item">
+                        <div class="team__elem">
+                            <span class="team__name">Константин Осинцев</span>
+                            <span class="team__position">АРТ ДИРЕКТОР</span>
+                        </div>
+                        </li>
+                    </ul>
+                    <ul class="team__list">
+                        <li class="team__item">
+                            <div class="team__elem">
+                                <span class="team__name">MOSCOW FOOD ACADEMY</span>
+                                <span class="team__position">client</span>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__elem">
+                                <span class="team__name">Образование</span>
+                                <span class="team__position">Индустрия</span>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__elem">
+                                <span class="team__name">NFT</span>
+                                <span class="team__position">Направление</span>
+                            </div>
+                        </li>
+                        <li class="team__item">
+                            <div class="team__elem">
+                                <span class="team__name">2022</span>
+                                <span class="team__position">год</span>
+                            </div>
+                        </li>    
+                    </ul>
+                </div>
+                <!-- end of team -->
+            </div>
+        </section>
+        <!-- end of main -->
+    </div>
+    @@include('components/_scripts.html')
+</body>
+</html>
