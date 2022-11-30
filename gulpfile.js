@@ -15,7 +15,7 @@ let paths = {
     dest: buildDir + "/css",
   },
   scripts: {
-    src: baseDir + "/js/app.js",
+    src: baseDir + "/js/*.js",
     dest: buildDir + "/js",
   },
   libs: {

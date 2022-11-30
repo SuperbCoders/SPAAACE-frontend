@@ -144,4 +144,9 @@ document.addEventListener("DOMContentLoaded", function () {
       header.setAttribute("data-theme", theme);
     }, 500);
   }
+
+  const viewer = new PhotoSphereViewer.Viewer({
+    container: document.querySelector('#pano'),
+    panorama: '../img/tiles/3.jpg'
+  });
 });
